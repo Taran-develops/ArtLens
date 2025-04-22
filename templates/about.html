@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Forms & Dataset</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ff40bd 0%, #9c4de2 100%);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff42c;
+      overflow-x: hidden;
+    }
+
+    .header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+      letter-spacing: -1px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      font-weight: 500;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 50px 40px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 25px;
+      width: 280px;
+      height: 450px;
+      padding: 25px 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #4b0082;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.7s ease both;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #5f2ca2;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Art Forms & Dataset</h1>
+    <p>A curated collection of iconic art movements used to train and evaluate our deep learning models</p>
+  </div>
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1920,h_960,g_auto/dpr_auto/f_auto/q_auto:eco/v1/renaissance-gettyimages-1309914466?_a=BAVAZGDX0" alt="Early Renaissance">
+      <h3>Early Renaissance</h3>
+      <p>Realism, perspective, and balanced compositions shaped the foundation of modern Western art in this era.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRkverBn86a-Uth8x8_v4ap4vuz6L4zXlz8A&s" alt="Fauvism">
+      <h3>Fauvism</h3>
+      <p>Unrestrained color, expressive brushwork, and a joyful sense of freedom — this is Fauvism.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.artnews.com/wp-content/uploads/2023/04/1202px-Piet_Mondriaan_1921_-_Co.jpeg?w=602" alt="Minimalism">
+      <h3>Minimalism</h3>
+      <p>Defined by geometric shapes, limited palettes, and a focus on space and silence.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://www.dailyartmagazine.com/wp-content/uploads/2021/05/CZOnngqWwAEswhO.jpg" alt="Pop Art">
+      <h3>Pop Art</h3>
+      <p>Bright, bold, and ironic — Pop Art embraces pop culture and mass media in visually explosive ways.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://d7hftxdivxxvm.cloudfront.net/?height=630&quality=80&resize_to=fill&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2FMGdjGe7vvq4E6TgQlHjdRA%252Fcustom-Custom_Size___jean-honore-fragonard-the-meeting-from-the-loves-of-the-shepherds-1771-1773.jpg&width=1200" alt="Rococo">
+      <h3>Rococo</h3>
+      <p>Whimsical, elegant, and delicate — Rococo captures the softness and splendor of 18th-century romanticism.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

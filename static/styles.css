@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ff40bd;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    color: #fff42c;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+    padding-left: 300px; /* leaves space for the header */
+  }
+  
+  .shape {
+    background-color: white;
+    border-radius: 30px;
+    width: 220px;
+    height: 340px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .shape img {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .shape p {
+    color: #9c4de2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .emoji {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to ArtLens 🎨</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ff40bd;
+      color: #fff42c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      color: #9c4de2;
+      border-radius: 30px;
+      width: 260px;
+      height: 320px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin: 20px 0 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #5c26a5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to ArtLens 🖼️</h1>
+    <p>Unleash creativity through AI-powered art analysis 🎨✨</p>
+  </header>
+
+  <div class="card-container">
+
+    <a class="card" href="{{ url_for('home') }}"> <!-- ✅ Correct Flask route -->
+      <h3>🏠 Home</h3>
+      <p>Dive into the core of our project and vision.</p>
+    </a>
+
+    <a class="card" href="{{ url_for('about') }}"> <!-- ✅ Correct Flask route -->
+      <h3>🧠 Art Forms & Dataset</h3>
+      <p>Explore styles like Pop Art, Rococo, and Minimalism.</p>
+    </a>
+
+    <a class="card" href="{{ url_for('upload') }}"> <!-- ✅ Correct Flask route -->
+      <h3>📤 Upload Now</h3>
+      <p>Try it out: upload your art for classification magic!</p>
+    </a>
+
+  </div>
+
+</body>
+</html>
