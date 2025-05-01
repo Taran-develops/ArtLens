@@ -11,7 +11,7 @@ UPLOAD_FOLDER = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load model
-model = load_model(r'./model/art_style_classifier.h5')
+model = load_model('model/art_style_classifier.h5')
 class_names = ['Early_renaissance', 'Fauvism', 'Minimalism', 'Pop_art', 'rococo']
 
 @app.route('/')
